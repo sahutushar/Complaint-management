@@ -60,12 +60,12 @@ cd Capstone Project---Student-Complaint-Management-System
 pip install -r requirements.txt
 
 # 3. Set up environment variables (create a .env based on .env.example)
-# ── Example (.env) ─────────────────────────────────────────
-# AZURE_STORAGE_CONNECTION_STRING="your_azure_blob_connection_string"
-# AZURE_SQL_CONN_STRING="your_sql_db_connection_string"
-# LOGIC_APP_WEBHOOK_URL="your_logic_app_trigger_url"
-# APPINSIGHTS_CONNECTION_STRING="your_app_insights_connection_string"
-# ───────────────────────────────────────────────────────────
+ ── Example (.env) ─────────────────────────────────────────
+ AZURE_STORAGE_CONNECTION_STRING="your_azure_blob_connection_string"
+ AZURE_SQL_CONN_STRING="your_sql_db_connection_string"
+ LOGIC_APP_WEBHOOK_URL="your_logic_app_trigger_url"
+ APPINSIGHTS_CONNECTION_STRING="your_app_insights_connection_string"
+ ───────────────────────────────────────────────────────────
 
 # 4. Run the application locally
 export FLASK_APP=app.py          # use `set` on Windows
@@ -74,11 +74,11 @@ flask db upgrade                 # create / migrate tables
 flask run                        # starts on http://127.0.0.1:5000
 
 # 5. Live deployment (Azure App Services)
-#   • Service  : Azure Web Apps
-#   • Region   : Central India
-#   • Stack    : Python 3.8
-#   • URL      : https://6604528tusharsahug3batch3-exczaeg7dec4egfx.centralindia-01.azurewebsites.net/submit
-#
+  • Service  : Azure Web Apps
+  • Region   : Central India
+  • Stack    : Python 3.8
+  • URL      : https://6604528tusharsahug3batch3-exczaeg7dec4egfx.centralindia-01.azurewebsites.net/submit
+
 # (Optional) CI/CD via GitHub Actions can be added for automated deploys.
 
 
