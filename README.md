@@ -1,98 +1,100 @@
-# 📝 Complaint-Management  
-*A cloud-ready student-complaint portal built with Python (Flask) and Microsoft Azure.*
+# Capstone Project - Student Complaint Management System
 
----
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-2.x-black?logo=flask)
+![Azure](https://img.shields.io/badge/Azure%20Cloud-Deployed-blue?logo=microsoft-azure)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-## 🌟 What This Project Does
-- **Students** quickly file campus issues, attach a photo or PDF, and watch the status flow  
-  **Submitted → Assigned → In Progress → Done**  
-- **Admins / staff** view a real-time dashboard, assign jobs, and update progress  
-- All data lives on **Azure SQL Database**; files are streamed to **Azure Blob Storage**  
-- **Logic Apps** send email/SMS notifications; **Application Insights** captures logs & metrics  
+A cloud-based complaint management system for educational institutions, built with Flask and Microsoft Azure services.
 
----
+## Features
 
-## 🛠 Tech Stack
-| Layer | Tools & Services |
-|-------|------------------|
-| **Frontend** | HTML 5 · CSS 3 · Bootstrap |
-| **Backend**  | Python 3 · Flask |
-| **Database & Storage** | Azure SQL Database · Azure Blob Storage |
-| **DevOps & Monitoring** | Azure App Service · Logic Apps · Application Insights |
-| **CI/CD** (optional) | GitHub Actions |
+- **Student Portal**
+  - Submit complaints with attachments (images/docs)
+  - Track complaint status in real-time
+  - Receive email notifications
+- **Admin Dashboard**
+  - View and manage all complaints
+  - Assign complaints to staff
+  - Update resolution status
+- **Cloud Integration**
+  - Azure Blob Storage for file uploads
+  - Azure SQL Database for complaint data
+  - Azure Logic Apps for email automation
+  - Application Insights for monitoring
 
----
+## Tech Stack
 
-## 🚀 Quick Start (Local)
+**Frontend:**  
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)
 
-```bash
-# 1 · clone
-git clone https://github.com/sahutushar/Complaint-management.git
-cd Complaint-management
+**Backend:**  
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
+![Flask](https://img.shields.io/badge/Flask-2.x-black?logo=flask)
 
-# 2 · install packages
-pip install -r requirements.txt
+**Database & Storage:**  
+![Microsoft SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?logo=microsoft-sql-server&logoColor=white)
+![Azure Blob Storage](https://img.shields.io/badge/Azure%20Blob%20Storage-0078D4?logo=microsoft-azure&logoColor=white)
 
-# 3 · configure secrets
-cp .env.example .env       # then add your own keys
-# AZURE_STORAGE_CONNECTION_STRING=...
-# AZURE_SQL_CONN_STRING=...
-# LOGIC_APP_WEBHOOK_URL=...
-# APPINSIGHTS_CONNECTION_STRING=...
+**DevOps:**  
+![Azure Logic Apps](https://img.shields.io/badge/Azure%20Logic%20Apps-0078D4?logo=microsoft-azure&logoColor=white)
+![Application Insights](https://img.shields.io/badge/Application%20Insights-0078D4?logo=microsoft-azure&logoColor=white)
 
-# 4 · run
-python app.py              # or: flask run
-Open http://127.0.0.1:5000 in your browser.
+## Getting Started
 
-🌐 Live Demo
-Deployed on Azure App Service
-🔗 https://6604528tusharsahug3batch3-exczaeg7dec4egfx.centralindia-01.azurewebsites.net/submit
+### Prerequisites
 
-Setting	Value
-Region	Central India
-Runtime	Python 3.8
-Scaling	P1v2 (auto-scale)
+- Python 3.8+
+- Azure account (for cloud services)
+- Git
 
-📂 Project Structure
-csharp
-Copy
-Edit
-Complaint-management/
-├── app.py                # Flask entry-point
-├── templates/            # Jinja2 HTML files
-├── static/               # CSS, JS, images
-├── requirements.txt
-├── .env.example          # variable names (no secrets)
-└── README.md
-🧰 Useful Make Targets
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/sahutushar/Complaint-management
+   cd Capstone Project---Student-Complaint-Management-System
+Install dependencies
+
 bash
 Copy
 Edit
-make run          # start local server
-make lint         # flake8 code quality
-make deploy       # zip & push to Azure
-🤝 Contributing
-Fork the repo, create a feature branch.
+pip install -r requirements.txt
+Set up environment variables
+Create a .env file (based on .env.example):
 
-Commit your changes.
+dotenv
+Copy
+Edit
+AZURE_STORAGE_CONNECTION_STRING="your_azure_blob_connection_string"
+AZURE_SQL_CONN_STRING="your_sql_db_connection_string"
+LOGIC_APP_WEBHOOK_URL="your_logic_app_trigger_url"
+APPINSIGHTS_CONNECTION_STRING="your_app_insights_connection_string"
+Live Deployment
+The application is deployed on Azure App Services and can be accessed at:
+https://6604528tusharsahug3batch3-exczaeg7dec4egfx.centralindia-01.azurewebsites.net/submit
 
-Open a pull request—describe why the change is useful.
+Deployment Details
+Service: Azure Web Apps
 
-📄 License
-Released under the MIT License – see LICENSE for full text.
+Region: Central India
 
-“Snap a photo, hit submit, watch it get fixed — powered by Azure.”
+Runtime Stack: Python 3.8
 
-csharp
+CI/CD: GitHub Actions (optional – add if used)
+
+sql
 Copy
 Edit
 
-**How to use**
+Copy the block above into a file named `README.md` inside your project, commit, and push—it will render exactly like the original.
 
-1. Save the snippet as `README.md` in the repo root.  
-2. Commit & push:
 
-```bash
-git add README.md
-git commit -m "Add comprehensive project README"
-git push origin main   # or master
+
+
+
+
+
