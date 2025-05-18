@@ -52,40 +52,35 @@ A cloud-based complaint management system for educational institutions, built wi
 
 ### Installation
 
-1. **Clone the repository**
+# 1. Clone the repository
+git clone https://github.com/sahutushar/Complaint-management
+cd Capstone Project---Student-Complaint-Management-System
 
-   ```bash
-   git clone https://github.com/sahutushar/Complaint-management
-   cd Capstone Project---Student-Complaint-Management-System
-   
-2. **Install dependencies**
-
+# 2. Install dependencies
 pip install -r requirements.txt
 
-3. **Set up environment variables**
-Create a .env file (based on .env.example):
+# 3. Set up environment variables (create a .env based on .env.example)
+# ── Example (.env) ─────────────────────────────────────────
+# AZURE_STORAGE_CONNECTION_STRING="your_azure_blob_connection_string"
+# AZURE_SQL_CONN_STRING="your_sql_db_connection_string"
+# LOGIC_APP_WEBHOOK_URL="your_logic_app_trigger_url"
+# APPINSIGHTS_CONNECTION_STRING="your_app_insights_connection_string"
+# ───────────────────────────────────────────────────────────
 
-AZURE_STORAGE_CONNECTION_STRING="your_azure_blob_connection_string"
-AZURE_SQL_CONN_STRING="your_sql_db_connection_string"
-LOGIC_APP_WEBHOOK_URL="your_logic_app_trigger_url"
-APPINSIGHTS_CONNECTION_STRING="your_app_insights_connection_string"
+# 4. Run the application locally
+export FLASK_APP=app.py          # use `set` on Windows
+export FLASK_ENV=development
+flask db upgrade                 # create / migrate tables
+flask run                        # starts on http://127.0.0.1:5000
 
- 
-**Live Deployment**
-The application is deployed on Azure App Services and can be accessed at:
-https://6604528tusharsahug3batch3-exczaeg7dec4egfx.centralindia-01.azurewebsites.net/submit
+# 5. Live deployment (Azure App Services)
+#   • Service  : Azure Web Apps
+#   • Region   : Central India
+#   • Stack    : Python 3.8
+#   • URL      : https://6604528tusharsahug3batch3-exczaeg7dec4egfx.centralindia-01.azurewebsites.net/submit
+#
+# (Optional) CI/CD via GitHub Actions can be added for automated deploys.
 
-**Deployment Details**
-Service: Azure Web Apps
-
-Region: Central India
-
-Runtime Stack: Python 3.8
-
-CI/CD: GitHub Actions (optional – add if used)
-
-
-Copy the block above into a file named `README.md` inside your project, commit, and push—it will render exactly like the original.
 
 
 
