@@ -57,27 +57,25 @@ A cloud-based complaint management system for educational institutions, built wi
    ```bash
    git clone https://github.com/sahutushar/Complaint-management
    cd Capstone Project---Student-Complaint-Management-System
-Install dependencies
+   
+2. **Install dependencies**
 
-bash
-Copy
-Edit
 pip install -r requirements.txt
-Set up environment variables
+
+3. **Set up environment variables**
 Create a .env file (based on .env.example):
 
-dotenv
-Copy
-Edit
 AZURE_STORAGE_CONNECTION_STRING="your_azure_blob_connection_string"
 AZURE_SQL_CONN_STRING="your_sql_db_connection_string"
 LOGIC_APP_WEBHOOK_URL="your_logic_app_trigger_url"
 APPINSIGHTS_CONNECTION_STRING="your_app_insights_connection_string"
-Live Deployment
+
+ 
+**Live Deployment**
 The application is deployed on Azure App Services and can be accessed at:
 https://6604528tusharsahug3batch3-exczaeg7dec4egfx.centralindia-01.azurewebsites.net/submit
 
-Deployment Details
+**Deployment Details**
 Service: Azure Web Apps
 
 Region: Central India
@@ -86,9 +84,6 @@ Runtime Stack: Python 3.8
 
 CI/CD: GitHub Actions (optional – add if used)
 
-sql
-Copy
-Edit
 
 Copy the block above into a file named `README.md` inside your project, commit, and push—it will render exactly like the original.
 
