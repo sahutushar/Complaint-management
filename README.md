@@ -53,8 +53,8 @@ A cloud-based complaint management system for educational institutions, built wi
 ### Installation
 
 # 1. Clone the repository
-git clone https://github.com/sahutushar/Complaint-management
-cd Capstone Project---Student-Complaint-Management-System
+* git clone https://github.com/sahutushar/Complaint-management
+* cd Capstone Project---Student-Complaint-Management-System
 
 # 2. Install dependencies
 pip install -r requirements.txt
